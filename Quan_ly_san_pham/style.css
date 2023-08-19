@@ -1,0 +1,151 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    line-height: 1.3;
+}
+
+#topbackgroup .tophead{
+    margin-top: -8px;
+    max-width: 100%;
+    height: auto;
+}
+#topbackgroup .link{
+    background-color : #006545;
+    margin-top: -5px;
+    width: 100%;
+    height: 35px;
+    color: white ;
+    font: 10px Roboto, sans-serif
+}
+#topbackgroup .link th, a{
+    color: white;
+}
+#topbackgroup .toolbar{
+    height: 88px;
+}
+#topbackgroup .img-btn{
+    margin-top: 3px;
+    width: 24px;
+    height: 24px;
+}
+#topbackgroup .btn{
+    background: #eeecec;
+    border-radius: 4px;
+    border: 1px;
+    cursor: pointer;
+ }
+#wrapper {
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 16px;
+    display: grid;
+
+}
+#product{
+    max-width: 1232px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+
+}
+
+
+
+
+
+
+
+
+/*style="border-radius: 4px; border: 1px; background: #eeecec; cursor: pointer"*/
+#modal-container{
+    height: 500vh;
+    background: rgba(0, 0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+#modal-container.show{
+    opacity: 1;
+    pointer-events: all;
+}
+#form-add{
+    background: white;
+    max-width: 265px;
+    border-radius: 20px;
+    left: 50%;
+    margin-top: 0px;
+    transform: translateX(240%);
+    transition: all 0.25s ease-in-out;
+}
+#modal-container.show #form-add{
+    margin-top: 100px;
+}
+#form-add .modal-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: -15px;
+    border-bottom: 1px solid #dedede;
+}
+#form-add .modal-body{
+    display: flex;
+    justify-items: center;
+    align-items: center ;
+    margin-top: 5px;
+    padding: 1px 12px;
+}
+
+/*Form Edit*/
+#modal-edit{
+    height: 500vh;
+    background: rgba(0, 0,0,0.5);
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    opacity: 0;
+    pointer-events: none;
+}
+#modal-edit.show{
+    opacity: 1;
+    pointer-events: all;
+}
+#form-edit{
+    background: white;
+    max-width: 265px;
+    border-radius: 20px;
+    left: 50%;
+    margin-top: 0px;
+    transform: translateX(240%);
+    transition: all 0.25s ease-in-out;
+}
+#modal-edit.show #form-edit{
+    margin-top: 100px;
+}
+#form-edit .modal-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: -15px;
+    border-bottom: 1px solid #dedede;
+}
+#form-edit .modal-body{
+    display: flex;
+    justify-items: center;
+    align-items: center ;
+    margin-top: 5px;
+    padding: 1px 12px;
+}
+
+
+
+/*body {*/
+/*    background-image: url("https://shopfront-cdn.tekoapis.com/static/soibien/og-image.png");*/
+/*    background-repeat: no-repeat;*/
+/*    background-attachment: fixed;*/
+/*    background-size: 100% 100%;*/
+/*}*/
